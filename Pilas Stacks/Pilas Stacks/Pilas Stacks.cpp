@@ -1,10 +1,5 @@
 /*Este programa tiene la finalidad de agregar cuantos numeros quieras a una pila para poder sacarlos en orden inverso, y desplegar todo el contenido mediantes pops
-
 Creado por Alejandro Lara ID:1106231
-Victor Santos ID: 1105987
-Mauricio Lopez ID: 1105459
-Carlos Jimenez ID: 1105749
-Adam Guerrero ID: 1106129
 */
 
 #include <conio.h>//sirve para el _getch()
@@ -106,7 +101,7 @@ void BorrarPila(Pila*& Nodo, int N) {
 	N = aux->dato; //guardamos el valor que queremos eliminar
 	Nodo = aux->next; //hacemos que la pila apunte al proximo nodo para que permita eliminar
 	delete aux; //borramos el numero
-	Num = N; //Solo es estetica para desplegar el numero que se borró
+	Num = N; //Solo es estetica para desplegar el numero que se borrÃ³
 	Color(6); cout << "  " << Num <<endl; Color(7);
 }
 void AgregarPila(Pila*& Nodo, int N) {
